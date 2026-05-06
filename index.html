@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova GX — Відеокарта нового покоління</title>
+  <meta name="description" content="Nova GX — найпотужніша відеокарта на ринку. 24 ГБ GDDR7, 3200 МГц, 16 384 шейдерних ядра.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Перейти до контенту</a>
+
+<header>
+  <nav class="nav" aria-label="Основна навігація">
+    <a href="#" class="nav-logo">NOVA</a>
+    <ul class="nav-links">
+      <li><a href="#features" aria-current="page">Продуктивність</a></li>
+      <li><a href="#slides">Дизайн</a></li>
+      <li><a href="#slides">Технології</a></li>
+      <li><a href="#cta">Конфігуратор</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-theme" id="theme-toggle" aria-label="Увімкнути світлу тему">☀</button>
+      <a class="nav-order" href="#cta">Замовити</a>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Відкрити меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Мобільне меню" aria-hidden="true">
+    <a href="#features">Продуктивність</a>
+    <a href="#slides">Дизайн</a>
+    <a href="#slides">Технології</a>
+    <a href="#cta">Конфігуратор</a>
+    <a href="#cta">Замовити</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-label="Nova GX — головний екран">
+    <div class="hero-text">
+      <p class="eyebrow">Представляємо</p>
+      <h1 class="title">Nova <em>GX</em></h1>
+      <p class="tagline">Найкраща на ринку.<br>То вам не ваші нвідії</p>
+      <div class="btns">
+        <button class="btn-s" onclick="document.getElementById('slides').scrollIntoView({behavior:'smooth'})">Дослідити GX</button>
+        <button class="btn-g">▶ Дивитись фільм</button>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img
+        src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=680&q=85"
+        alt="Nova GX — відеокарта нового покоління, вид спереду"
+        width="680" height="510"
+        loading="eager"
+      >
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Технічні характеристики">
+    <div class="stat"><div class="stat-v">24<sup>ГБ</sup></div><div class="stat-k">Пам'ять GDDR7</div></div>
+    <div class="sep" aria-hidden="true"></div>
+    <div class="stat"><div class="stat-v">3 200<sup>МГц</sup></div><div class="stat-k">Турбо-частота</div></div>
+    <div class="sep" aria-hidden="true"></div>
+    <div class="stat"><div class="stat-v">16 384</div><div class="stat-k">Шейдерних ядра</div></div>
+    <div class="sep" aria-hidden="true"></div>
+    <div class="stat"><div class="stat-v">320<sup>Вт</sup></div><div class="stat-k">Споживання</div></div>
+  </section>
+
+  <section class="slider-section" id="slides" aria-label="Переваги Nova GX">
+    <p class="eyebrow">Переваги</p>
+    <h2 class="section-title">Інженерія, що <em>говорить сама</em></h2>
+
+    <div id="slider-wrap">
+      <div class="slider-outer"><div class="slider-track" id="slider-track" aria-live="polite">
+
+        <article class="slide" aria-label="Слайд 1: Аудіовізуальна точність">
+          <div class="slide-content">
+            <p class="slide-num">01 / 03</p>
+            <h3 class="slide-title">Аудіовізуальна точність</h3>
+            <p class="slide-desc">Архітектура Nova перераховує кожен піксель у реальному часі. Adaptive Sync усуває тіринг навіть при 360 Гц.</p>
+          </div>
+          <div class="slide-visual" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?w=700&q=80&auto=format&fit=crop" alt="" loading="lazy">
+          </div>
+        </article>
+
+        <article class="slide" aria-label="Слайд 2: Масивна паралельність">
+          <div class="slide-content">
+            <p class="slide-num">02 / 03</p>
+            <h3 class="slide-title">Масивна паралельність</h3>
+            <p class="slide-desc">16 384 шейдерних ядра обробляють геометрію, тіні й ефекти одночасно, не поступаючись жодним кадром.</p>
+          </div>
+          <div class="slide-visual" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&q=80&auto=format&fit=crop" alt="" loading="lazy">
+          </div>
+        </article>
+
+        <article class="slide" aria-label="Слайд 3: Безмежна пропускна здатність">
+          <div class="slide-content">
+            <p class="slide-num">03 / 03</p>
+            <h3 class="slide-title">Безмежна пропускна здатність</h3>
+            <p class="slide-desc">Шина GDDR7 передає дані зі швидкістю 1.2 ТБ/с. Жоден текстурний пакет не стає вузьким місцем.</p>
+          </div>
+          <div class="slide-visual" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80&auto=format&fit=crop" alt="" loading="lazy">
+          </div>
+        </article>
+
+      </div></div>
+
+      <div class="slider-controls">
+        <ul class="slider-dots" aria-label="Слайди">
+          <li><button aria-current="true"  aria-label="Слайд 1" data-idx="0"></button></li>
+          <li><button aria-current="false" aria-label="Слайд 2" data-idx="1"></button></li>
+          <li><button aria-current="false" aria-label="Слайд 3" data-idx="2"></button></li>
+        </ul>
+        <div class="slider-arrows" role="group" aria-label="Навігація слайдером">
+          <button class="slider-btn" id="prev-btn" aria-label="Попередній слайд" disabled>←</button>
+          <button class="slider-btn" id="next-btn" aria-label="Наступний слайд">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features" aria-label="Ключові особливості">
+    <article class="feature-card">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      <h3 class="feature-name">Блискавична реакція</h3>
+      <p class="feature-desc">Час відгуку 0.03 мс. Жоден ворог не встигне моргнути.</p>
+    </article>
+    <article class="feature-card">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l4.5 4.5"/></svg>
+      <h3 class="feature-name">Ефективне охолодження</h3>
+      <p class="feature-desc">Три вентилятори з алгоритмом Zero RPM підтримують ідеальний теплообмін.</p>
+    </article>
+    <article class="feature-card">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      <h3 class="feature-name">До 4 моніторів</h3>
+      <p class="feature-desc">DisplayPort 2.1 і HDMI 2.1 дають вихід 8K60 або 4K360.</p>
+    </article>
+  </section>
+
+  <div class="band" aria-hidden="true">
+    <span>Інженерна одержимість</span><span class="dot">·</span>
+    <span>Чиста продуктивність</span><span class="dot">·</span>
+    <span>Поза межами</span><span class="dot">·</span>
+    <span>GDDR7 · 16 384 ядра</span>
+  </div>
+
+  <section class="cta" id="cta" aria-label="Замовити Nova GX">
+    <p class="eyebrow">Готові?</p>
+    <h2 class="cta-title">Зробіть крок у<br><em>нове покоління</em></h2>
+    <p class="cta-sub">Обмежена кількість у першій хвилі поставок.</p>
+    <div class="cta-btns">
+      <button class="btn-s">Замовити зараз</button>
+      <button class="btn-g">Завантажити специфікацію</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 2026 Nova Technologies UA</span>
+  <nav aria-label="Посилання футера">
+    <a href="#">Конфіденційність</a>
+    <a href="#">Умови</a>
+    <a href="#">Підтримка</a>
+  </nav>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
