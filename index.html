@@ -18,7 +18,7 @@
   <nav class="nav" aria-label="Основна навігація">
     <a href="#" class="nav-logo">NOVA</a>
     <ul class="nav-links">
-      <li><a href="#features" aria-current="page">Продуктивність</a></li>
+      <li><a href="#features">Продуктивність</a></li>
       <li><a href="#slides">Дизайн</a></li>
       <li><a href="#slides">Технології</a></li>
       <li><a href="#cta">Конфігуратор</a></li>
@@ -32,11 +32,13 @@
     </div>
   </nav>
   <nav id="mobile-menu" class="mobile-menu" aria-label="Мобільне меню" aria-hidden="true">
-    <a href="#features">Продуктивність</a>
-    <a href="#slides">Дизайн</a>
-    <a href="#slides">Технології</a>
-    <a href="#cta">Конфігуратор</a>
-    <a href="#cta">Замовити</a>
+    <ul>
+      <li><a href="#features">Продуктивність</a></li>
+      <li><a href="#slides">Дизайн</a></li>
+      <li><a href="#slides">Технології</a></li>
+      <li><a href="#cta">Конфігуратор</a></li>
+      <li><a href="#cta">Замовити</a></li>
+    </ul>
   </nav>
 </header>
 
@@ -45,11 +47,11 @@
   <section class="hero" aria-label="Nova GX — головний екран">
     <div class="hero-text">
       <p class="eyebrow">Представляємо</p>
-      <h1 class="title">Nova <em>GX</em></h1>
+      <h1 class="title">Nova <span class="accent">GX</span></h1>
       <p class="tagline">Найкраща на ринку.<br>То вам не ваші нвідії</p>
       <div class="btns">
         <button class="btn-s" onclick="document.getElementById('slides').scrollIntoView({behavior:'smooth'})">Дослідити GX</button>
-        <button class="btn-g">▶ Дивитись фільм</button>
+        <button class="btn-g"><span aria-hidden="true">▶</span> Дивитись фільм</button>
       </div>
     </div>
     <div class="hero-img">
@@ -74,14 +76,14 @@
 
   <section class="slider-section" id="slides" aria-label="Переваги Nova GX">
     <p class="eyebrow">Переваги</p>
-    <h2 class="section-title">Інженерія, що <em>говорить сама</em></h2>
+    <h2 class="section-title">Інженерія, що <span class="accent">говорить сама</span></h2>
 
     <div id="slider-wrap">
       <div class="slider-outer"><div class="slider-track" id="slider-track" aria-live="polite">
 
         <article class="slide" aria-label="Слайд 1: Аудіовізуальна точність">
           <div class="slide-content">
-            <p class="slide-num">01 / 03</p>
+            <p class="slide-num" aria-hidden="true">01 / 03</p>
             <h3 class="slide-title">Аудіовізуальна точність</h3>
             <p class="slide-desc">Архітектура Nova перераховує кожен піксель у реальному часі. Adaptive Sync усуває тіринг навіть при 360 Гц.</p>
           </div>
@@ -92,7 +94,7 @@
 
         <article class="slide" aria-label="Слайд 2: Масивна паралельність">
           <div class="slide-content">
-            <p class="slide-num">02 / 03</p>
+            <p class="slide-num" aria-hidden="true">02 / 03</p>
             <h3 class="slide-title">Масивна паралельність</h3>
             <p class="slide-desc">16 384 шейдерних ядра обробляють геометрію, тіні й ефекти одночасно, не поступаючись жодним кадром.</p>
           </div>
@@ -103,7 +105,7 @@
 
         <article class="slide" aria-label="Слайд 3: Безмежна пропускна здатність">
           <div class="slide-content">
-            <p class="slide-num">03 / 03</p>
+            <p class="slide-num" aria-hidden="true">03 / 03</p>
             <h3 class="slide-title">Безмежна пропускна здатність</h3>
             <p class="slide-desc">Шина GDDR7 передає дані зі швидкістю 1.2 ТБ/с. Жоден текстурний пакет не стає вузьким місцем.</p>
           </div>
@@ -129,6 +131,7 @@
   </section>
 
   <section class="features" id="features" aria-label="Ключові особливості">
+    <h2 class="sr-only">Ключові особливості</h2>
     <article class="feature-card">
       <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
       <h3 class="feature-name">Блискавична реакція</h3>
@@ -155,7 +158,7 @@
 
   <section class="cta" id="cta" aria-label="Замовити Nova GX">
     <p class="eyebrow">Готові?</p>
-    <h2 class="cta-title">Зробіть крок у<br><em>нове покоління</em></h2>
+    <h2 class="cta-title">Зробіть крок у<br><span class="accent">нове покоління</span></h2>
     <p class="cta-sub">Обмежена кількість у першій хвилі поставок.</p>
     <div class="cta-btns">
       <button class="btn-s">Замовити зараз</button>
